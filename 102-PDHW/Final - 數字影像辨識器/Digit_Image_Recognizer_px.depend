@@ -1,0 +1,103 @@
+# depslib dependency file v1.0
+1397825278 source:c:\users\¥­°a\desktop\digit_image_recognizer_px\main.cpp
+	<iostream>
+	"Bitmap.h"
+
+1397825833 source:c:\users\¥­°a\desktop\digit_image_recognizer_px\bitmap.cpp
+	<iostream>
+	"Bitmap.h"
+
+1397825237 c:\users\¥­°a\desktop\digit_image_recognizer_px\bitmap.h
+
+1402247520 source:c:\google\dropbox\program temp\final\digit_image_recognizer_px\bitmap.cpp
+	<iostream>
+	"Bitmap.h"
+	<string>
+	<sstream>
+
+1402160527 c:\google\dropbox\program temp\final\digit_image_recognizer_px\bitmap.h
+
+1402247457 source:c:\google\dropbox\program temp\final\digit_image_recognizer_px\imageproc.cpp
+	<iostream>
+	"ImageProc.h"
+
+1402247000 source:c:\google\dropbox\program temp\final\digit_image_recognizer_px\main.cpp
+	<iostream>
+	<fstream>
+	"Bitmap.h"
+	"ImageProc.h"
+	"Matcher.h"
+	<dirent.h>
+	<vector>
+	<cstdlib>
+	<map>
+	<algorithm>
+	<windows.h>
+
+1402164076 source:c:\google\dropbox\program temp\final\digit_image_recognizer_px\matcher.cpp
+	<iostream>
+	"Matcher.h"
+
+1402246914 c:\google\dropbox\program temp\final\digit_image_recognizer_px\imageproc.h
+	"Bitmap.h"
+
+1402163723 source:c:\px\dropbox\program temp\final\digit_image_recognizer_px\main.cpp
+	<iostream>
+	<fstream>
+	"Bitmap.h"
+	"ImageProc.h"
+	"Matcher.h"
+	<dirent.h>
+	<vector>
+	<cstdlib>
+	<map>
+	<algorithm>
+
+1402160527 c:\px\dropbox\program temp\final\digit_image_recognizer_px\bitmap.h
+
+1400419687 c:\px\dropbox\program temp\final\digit_image_recognizer_px\imageproc.h
+	"Bitmap.h"
+
+1402164076 source:c:\px\dropbox\program temp\final\digit_image_recognizer_px\matcher.cpp
+	<iostream>
+	"Matcher.h"
+
+1402163281 source:c:\px\dropbox\program temp\final\digit_image_recognizer_px\imageproc.cpp
+	<iostream>
+	"ImageProc.h"
+
+1402164176 source:c:\px\dropbox\program temp\final\digit_image_recognizer_px\bitmap.cpp
+	<iostream>
+	"Bitmap.h"
+	<string>
+	<sstream>
+
+1400494089 source:c:\users\mit_db\desktop\digit_image_recognizer_px\bitmap.cpp
+	<iostream>
+	"Bitmap.h"
+	<string>
+	<sstream>
+
+1400388794 c:\users\mit_db\desktop\digit_image_recognizer_px\bitmap.h
+
+1400496529 source:c:\users\mit_db\desktop\digit_image_recognizer_px\imageproc.cpp
+	<iostream>
+	"ImageProc.h"
+
+1400390886 c:\users\mit_db\desktop\digit_image_recognizer_px\imageproc.h
+	"Bitmap.h"
+
+1397798812 source:c:\users\mit_db\desktop\digit_image_recognizer_px\matcher.cpp
+
+1400496637 source:c:\users\mit_db\desktop\digit_image_recognizer_px\main.cpp
+	<iostream>
+	<fstream>
+	"Bitmap.h"
+	"ImageProc.h"
+
+1402162474 c:\px\dropbox\program temp\final\digit_image_recognizer_px\matcher.h
+	"Bitmap.h"
+
+1402162474 c:\google\dropbox\program temp\final\digit_image_recognizer_px\matcher.h
+	"Bitmap.h"
+

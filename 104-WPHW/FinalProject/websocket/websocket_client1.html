@@ -1,0 +1,50 @@
+<!doctype html>
+
+<HTML lang ="en">
+	<HEAD>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<!-- 最新編譯和最佳化的 CSS -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+		<!-- 選擇性佈景主題 -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap-theme.min.css">
+		<!-- 最新編譯和最佳化的 JavaScript -->
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+	
+		<TITLE>Welcome to 丟水球</TITLE>
+		
+	</HEAD>
+<BODY>
+<script>
+	
+	window.onload = function(){
+		var nick = prompt("Enter your nickname");
+		var input = document.getElementById("input");
+		input.focus();
+		var socket = new WebSocket("ws://localhost:1111");
+		
+		socket.onmessage = function(event){
+			var msg = event.data;
+			var node = document.createTextNode(msg);
+			var div = document.createElement("div");
+			div.appendChild(node);
+			document.body.insertBefore(div,input);
+			input.scrollIntoView();
+		}
+		
+		input.onchange = function(){
+			var msg = nick + ":" + input.value;
+			socket.send(msg);
+			input.value = "";
+		}
+		
+	};
+</script>
+
+<input id="input" style="width:100%">		
+		
+		
+		
+</BODY>
+</HTML>

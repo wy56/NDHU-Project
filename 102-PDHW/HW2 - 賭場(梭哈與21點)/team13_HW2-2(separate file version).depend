@@ -1,0 +1,174 @@
+# depslib dependency file v1.0
+1397565754 source:c:\users\csie\desktop\team13_hw2-2(separate file version)\main.cpp
+	<iostream>
+	<ctime>
+	<stdlib.h>
+	"Card.h"
+	"EricShuffler.h"
+	"Hacker.h"
+	"SoHandPokerCards.h"
+	"SoHandPlayer.h"
+	"BlackJackPlayer.h"
+	"BlackJackPokerCards.h"
+	<vector>
+	<cmath>
+	<algorithm>
+	<iomanip>
+
+1397566654 c:\users\csie\desktop\team13_hw2-2(separate file version)\player.h
+	<iostream>
+	<vector>
+	"Card.h"
+	<algorithm>
+	<iomanip>
+
+1397010312 c:\users\csie\desktop\team13_hw2-2(separate file version)\card.h
+	<iostream>
+	<vector>
+	<algorithm>
+	<iomanip>
+
+1397565811 c:\users\csie\desktop\team13_hw2-2(separate file version)\pokercard.h
+	<iostream>
+	<vector>
+	<algorithm>
+	<iomanip>
+	"Player.h"
+
+1397565785 c:\users\csie\desktop\team13_hw2-2(separate file version)\ericshuffler.h
+	<iostream>
+	<vector>
+	<algorithm>
+	<iomanip>
+	"PokerCard.h"
+	"Player.h"
+	<cmath>
+
+1397563787 c:\users\csie\desktop\team13_hw2-2(separate file version)\hacker.h
+	<iostream>
+	<vector>
+	<algorithm>
+	<iomanip>
+
+1397565364 c:\users\csie\desktop\team13_hw2-2(separate file version)\sohandpokercards.h
+	<iostream>
+	<vector>
+	<algorithm>
+	<iomanip>
+
+1397566613 c:\users\csie\desktop\team13_hw2-2(separate file version)\sohandplayer.h
+	<iostream>
+	<vector>
+	<algorithm>
+	<iomanip>
+	"Player.h"
+
+1397566667 c:\users\csie\desktop\team13_hw2-2(separate file version)\blackjackplayer.h
+	<iostream>
+	<vector>
+	<algorithm>
+	<iomanip>
+
+1397565364 c:\users\csie\desktop\team13_hw2-2(separate file version)\blackjackpokercards.h
+	<iostream>
+	<vector>
+	<algorithm>
+	<iomanip>
+	"PokerCard.h"
+	"EricShuffler.h"
+	"Hacker.h"
+
+1398013410 source:c:\users\pt\desktop\team13_hw2-3(separate file version)\main.cpp
+	<iostream>
+	<ctime>
+	<stdlib.h>
+	"Card.h"
+	"EricShuffler.h"
+	"Hacker.h"
+	"SoHandPokerCards.h"
+	"SoHandPlayer.h"
+	"BlackJackPlayer.h"
+	"BlackJackPokerCards.h"
+	<vector>
+	<cmath>
+	<algorithm>
+	<iomanip>
+	<conio.h>
+	<stdlib.h>
+	<stdio.h>
+	"showmenu.h"
+
+1397010312 c:\users\pt\desktop\team13_hw2-3(separate file version)\card.h
+	<iostream>
+	<vector>
+	<algorithm>
+	<iomanip>
+
+1397565784 c:\users\pt\desktop\team13_hw2-3(separate file version)\ericshuffler.h
+	<iostream>
+	<vector>
+	<algorithm>
+	<iomanip>
+	"PokerCard.h"
+	"Player.h"
+	<cmath>
+
+1397565810 c:\users\pt\desktop\team13_hw2-3(separate file version)\pokercard.h
+	<iostream>
+	<vector>
+	<algorithm>
+	<iomanip>
+	"Player.h"
+
+1397566654 c:\users\pt\desktop\team13_hw2-3(separate file version)\player.h
+	<iostream>
+	<vector>
+	"Card.h"
+	<algorithm>
+	<iomanip>
+
+1397563786 c:\users\pt\desktop\team13_hw2-3(separate file version)\hacker.h
+	<iostream>
+	<vector>
+	<algorithm>
+	<iomanip>
+
+1397565364 c:\users\pt\desktop\team13_hw2-3(separate file version)\sohandpokercards.h
+	<iostream>
+	<vector>
+	<algorithm>
+	<iomanip>
+
+1397566612 c:\users\pt\desktop\team13_hw2-3(separate file version)\sohandplayer.h
+	<iostream>
+	<vector>
+	<algorithm>
+	<iomanip>
+	"Player.h"
+
+1397566666 c:\users\pt\desktop\team13_hw2-3(separate file version)\blackjackplayer.h
+	<iostream>
+	<vector>
+	<algorithm>
+	<iomanip>
+
+1397565364 c:\users\pt\desktop\team13_hw2-3(separate file version)\blackjackpokercards.h
+	<iostream>
+	<vector>
+	<algorithm>
+	<iomanip>
+	"PokerCard.h"
+	"EricShuffler.h"
+	"Hacker.h"
+
+1397752792 source:c:\users\pt\desktop\team13_hw2-3(separate file version)\showmenu.o
+
+1398013245 source:c:\users\pt\desktop\team13_hw2-3(separate file version)\showmenu.cpp
+	<conio.h>
+	<stdlib.h>
+	<stdio.h>
+	<iostream>
+	"showmenu.h"
+
+1397753506 c:\users\pt\desktop\team13_hw2-3(separate file version)\showmenu.h
+

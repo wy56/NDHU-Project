@@ -1,0 +1,230 @@
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<head>
+<script type="text/javascript" src="loadxmldoc.js">
+</script>
+</head>
+
+<body bgcolor="#cccccc">
+
+<h1 id="demo"></h1>
+<table border="1" valign="top">
+<tr>
+<td>
+<select name="YourLocation" onChange="changed(this)">
+　<option id="1" value="1"></option><option id="2" value="2"></option>
+  <option id="3" value="3"></option><option id="4" value="4"></option>
+  <option id="5" value="5"></option><option id="6" value="6"></option>
+  <option id="7" value="7"></option><option id="8" value="8"></option>
+  <option id="9" value="9"></option><option id="10" value="10"></option>
+  <option id="11" value="11"></option><option id="12" value="12"></option>
+  <option id="13" value="13"></option><option id="14" value="14"></option>
+  <option id="15" value="15"></option><option id="16" value="16"></option>
+  <option id="17" value="17"></option><option id="18" value="18"></option>
+  <option id="19" value="19"></option><option id="20" value="20"></option>
+  <option id="21" value="21"></option><option id="22" value="22"></option>
+</select>
+</td>
+</tr>
+  <tr>
+　<td>時間</td>
+　<td>溫度(℃)</td>
+  <td>天氣狀況</td>
+  <td>舒適度</td>
+  <td >降雨機率</td>
+　</tr>
+　<tr id="tr1">
+　<td id="tbtd1"></td>
+　<td id="tbtd2">
+  <p id="tbtd2p"></p>
+  </td>
+  <td id="tbtd3">
+  <p id="tbtd3p"></p>
+  </td>
+  <td id="tbtd4"></td>
+  <td id="tbtd5">
+  <p id="tbtd5p"></p>
+  </td>
+　</tr>
+  <tr id="tr2">
+　<td id="tbtd21"></td>
+　<td id="tbtd22">
+  <p id="tbtd22p"></p>
+  </td>
+  <td id="tbtd23">
+  <p id="tbtd23p"></p>
+  </td>
+  <td id="tbtd24"></td>
+  <td id="tbtd25">
+  <p id="tbtd25p"></p>
+  </td>
+　</tr>
+  <tr id="tr3">
+　<td id="tbtd31"></td>
+　<td id="tbtd32">
+  <p id="tbtd32p"></p>
+  </td>
+  <td id="tbtd33">
+  <p id="tbtd33p"></p>
+  </td>
+  <td id="tbtd34"></td>
+  <td id="tbtd35">
+  <p id="tbtd35p"></p>
+  </td>
+　</tr>
+</table>
+
+<script type="text/javascript">
+xmlDoc=loadXMLDoc("F-C0032-001.xml");
+document.getElementById("demo").innerHTML = xmlDoc.getElementsByTagName("datasetDescription")[0].childNodes[0].nodeValue;
+
+sq = convert_xml_to_string(xmlDoc.getElementsByTagName("startTime")[0].childNodes[0]);
+eq = convert_xml_to_string(xmlDoc.getElementsByTagName("endTime")[0].childNodes[0]);
+ts = sq.split("+")[0];
+te = eq.split("+")[0];
+document.getElementById("tbtd1").innerHTML = sq.split("T",1)+' '+ts.split("T")[1]+'<br>到<br>'+eq.split("T",1)+' '+te.split("T")[1];
+
+sq = convert_xml_to_string(xmlDoc.getElementsByTagName("startTime")[1].childNodes[0]);
+eq = convert_xml_to_string(xmlDoc.getElementsByTagName("endTime")[1].childNodes[0]);
+ts = sq.split("+")[0];
+te = eq.split("+")[0];
+document.getElementById("tbtd21").innerHTML = sq.split("T",1)+' '+ts.split("T")[1]+'<br>到<br>'+eq.split("T",1)+' '+te.split("T")[1];
+
+sq = convert_xml_to_string(xmlDoc.getElementsByTagName("startTime")[2].childNodes[0]);
+eq = convert_xml_to_string(xmlDoc.getElementsByTagName("endTime")[2].childNodes[0]);
+ts = sq.split("+")[0];
+te = eq.split("+")[0];
+document.getElementById("tbtd31").innerHTML = sq.split("T",1)+' '+ts.split("T")[1]+'<br>到<br>'+eq.split("T",1)+' '+te.split("T")[1];
+
+
+ document.getElementById("1").innerHTML = xmlDoc.getElementsByTagName("locationName")[0].childNodes[0].nodeValue;
+ document.getElementById("2").innerHTML = xmlDoc.getElementsByTagName("locationName")[1].childNodes[0].nodeValue;
+ document.getElementById("3").innerHTML = xmlDoc.getElementsByTagName("locationName")[2].childNodes[0].nodeValue;
+ document.getElementById("4").innerHTML = xmlDoc.getElementsByTagName("locationName")[3].childNodes[0].nodeValue;
+ document.getElementById("5").innerHTML = xmlDoc.getElementsByTagName("locationName")[4].childNodes[0].nodeValue;
+ document.getElementById("6").innerHTML = xmlDoc.getElementsByTagName("locationName")[5].childNodes[0].nodeValue;
+ document.getElementById("7").innerHTML = xmlDoc.getElementsByTagName("locationName")[6].childNodes[0].nodeValue;
+ document.getElementById("8").innerHTML = xmlDoc.getElementsByTagName("locationName")[7].childNodes[0].nodeValue;
+ document.getElementById("9").innerHTML = xmlDoc.getElementsByTagName("locationName")[8].childNodes[0].nodeValue;
+ document.getElementById("10").innerHTML = xmlDoc.getElementsByTagName("locationName")[9].childNodes[0].nodeValue;
+ document.getElementById("11").innerHTML = xmlDoc.getElementsByTagName("locationName")[10].childNodes[0].nodeValue;
+ document.getElementById("12").innerHTML = xmlDoc.getElementsByTagName("locationName")[11].childNodes[0].nodeValue;
+ document.getElementById("13").innerHTML = xmlDoc.getElementsByTagName("locationName")[12].childNodes[0].nodeValue;
+ document.getElementById("14").innerHTML = xmlDoc.getElementsByTagName("locationName")[13].childNodes[0].nodeValue;
+ document.getElementById("15").innerHTML = xmlDoc.getElementsByTagName("locationName")[14].childNodes[0].nodeValue;
+ document.getElementById("16").innerHTML = xmlDoc.getElementsByTagName("locationName")[15].childNodes[0].nodeValue;
+ document.getElementById("17").innerHTML = xmlDoc.getElementsByTagName("locationName")[16].childNodes[0].nodeValue;
+ document.getElementById("18").innerHTML = xmlDoc.getElementsByTagName("locationName")[17].childNodes[0].nodeValue;
+ document.getElementById("19").innerHTML = xmlDoc.getElementsByTagName("locationName")[18].childNodes[0].nodeValue;
+ document.getElementById("20").innerHTML = xmlDoc.getElementsByTagName("locationName")[19].childNodes[0].nodeValue;
+ document.getElementById("21").innerHTML = xmlDoc.getElementsByTagName("locationName")[20].childNodes[0].nodeValue;
+ document.getElementById("22").innerHTML = xmlDoc.getElementsByTagName("locationName")[21].childNodes[0].nodeValue;
+ 
+
+ 
+ 
+ function changed(theselect) {
+
+ 
+ r=Number(xmlDoc.getElementsByTagName("parameterValue")[3*(theselect.value-1)].childNodes[0].nodeValue);
+ if(r>9)
+ document.getElementById("tbtd3p").innerHTML='<img src="http://www.cwb.gov.tw/V7/symbol/weather/gif/night/'+r+'.gif" title="'+xmlDoc.getElementsByTagName("parameterName")[15*(theselect.value-1)].childNodes[0].nodeValue+'">';
+ if(r<10)
+ document.getElementById("tbtd3p").innerHTML='<img src="http://www.cwb.gov.tw/V7/symbol/weather/gif/night/'+'0'+r+'.gif" title="'+xmlDoc.getElementsByTagName("parameterName")[15*(theselect.value-1)].childNodes[0].nodeValue+'">';
+ 
+ r=Number(xmlDoc.getElementsByTagName("parameterValue")[3*(theselect.value-1)+1].childNodes[0].nodeValue);
+ if(r>9)
+ document.getElementById("tbtd23p").innerHTML='<img src="http://www.cwb.gov.tw/V7/symbol/weather/gif/night/'+r+'.gif" title="'+xmlDoc.getElementsByTagName("parameterName")[15*(theselect.value-1)+1].childNodes[0].nodeValue+'">';
+ if(r<10)
+ document.getElementById("tbtd23p").innerHTML='<img src="http://www.cwb.gov.tw/V7/symbol/weather/gif/night/'+'0'+r+'.gif" title="'+xmlDoc.getElementsByTagName("parameterName")[15*(theselect.value-1)+1].childNodes[0].nodeValue+'">';
+
+ r=Number(xmlDoc.getElementsByTagName("parameterValue")[3*(theselect.value-1)+2].childNodes[0].nodeValue);
+ if(r>9)
+ document.getElementById("tbtd33p").innerHTML='<img src="http://www.cwb.gov.tw/V7/symbol/weather/gif/night/'+r+'.gif" title="'+xmlDoc.getElementsByTagName("parameterName")[15*(theselect.value-1)+2].childNodes[0].nodeValue+'">';
+ if(r<10)
+ document.getElementById("tbtd33p").innerHTML='<img src="http://www.cwb.gov.tw/V7/symbol/weather/gif/night/'+'0'+r+'.gif" title="'+xmlDoc.getElementsByTagName("parameterName")[15*(theselect.value-1)+1].childNodes[0].nodeValue+'">';
+
+ 
+ 
+ 
+ 
+ 
+ document.getElementById("tbtd4").innerHTML = xmlDoc.getElementsByTagName("parameterName")[15*(theselect.value-1)+9].childNodes[0].nodeValue;
+ document.getElementById("tbtd24").innerHTML = xmlDoc.getElementsByTagName("parameterName")[15*(theselect.value-1)+10].childNodes[0].nodeValue;
+ document.getElementById("tbtd34").innerHTML = xmlDoc.getElementsByTagName("parameterName")[15*(theselect.value-1)+11].childNodes[0].nodeValue;
+ s=xmlDoc.getElementsByTagName("parameterName")[15*(theselect.value-1)+12].childNodes[0].nodeValue;
+ document.getElementById("tbtd5p").innerHTML = s+"%";
+ if(Number(s)<50)
+	 {
+	  document.getElementById("tbtd5p").innerHTML='<font color="blue">'+s+"%"+'</font>';
+	 }
+	 if(Number(s)>=50)
+	 {
+	  document.getElementById("tbtd5p").innerHTML='<font color="red">'+s+"%"+'</font>';
+	 }
+ s=xmlDoc.getElementsByTagName("parameterName")[15*(theselect.value-1)+13].childNodes[0].nodeValue;
+ if(Number(s)<50)
+	 {
+	  document.getElementById("tbtd25p").innerHTML='<font color="blue">'+s+"%"+'</font>';
+	 }
+	 if(Number(s)>=50)
+	 {
+	  document.getElementById("tbtd25p").innerHTML='<font color="red">'+s+"%"+'</font>';
+	 }
+ s=xmlDoc.getElementsByTagName("parameterName")[15*(theselect.value-1)+14].childNodes[0].nodeValue;
+ if(Number(s)<50)
+	 {
+	  document.getElementById("tbtd35p").innerHTML='<font color="blue">'+s+"%"+'</font>';
+	 }
+	 if(Number(s)>=50)
+	 {
+	  document.getElementById("tbtd35p").innerHTML='<font color="red">'+s+"%"+'</font>';
+	 }
+ var cl=Number(xmlDoc.getElementsByTagName("parameterName")[15*(theselect.value-1)+6].childNodes[0].nodeValue);
+ var cl2=Number(xmlDoc.getElementsByTagName("parameterName")[15*(theselect.value-1)+3].childNodes[0].nodeValue);
+	 if(cl<20)
+	 {
+	  document.getElementById("tbtd2p").innerHTML='<font color="blue">'+cl+'~'+cl2+'</font>';
+	 }
+	 if(cl>=20&&cl<25)
+	 {
+	  document.getElementById("tbtd2p").innerHTML='<font color=EE7700>'+cl+'~'+cl2+'</font>';
+	 }
+	 if(cl>=25)
+	 {
+	 document.getElementById("tbtd2p").innerHTML='<font color="red">'+cl+'~'+cl2+'</font>';
+	 }
+ var cl=Number(xmlDoc.getElementsByTagName("parameterName")[15*(theselect.value-1)+7].childNodes[0].nodeValue);
+ var cl2=Number(xmlDoc.getElementsByTagName("parameterName")[15*(theselect.value-1)+4].childNodes[0].nodeValue);
+	 if(cl<20)
+	 {
+	  document.getElementById("tbtd22p").innerHTML='<font color="blue">'+cl+'~'+cl2+'</font>';
+	 }
+	 if(cl>=20&&cl<25)
+	 {
+	  document.getElementById("tbtd22p").innerHTML='<font color=EE7700>'+cl+'~'+cl2+'</font>';
+	 }
+	 if(cl>=25)
+	 {
+	 document.getElementById("tbtd22p").innerHTML='<font color="red">'+cl+'~'+cl2+'</font>';
+	 }
+ var cl=Number(xmlDoc.getElementsByTagName("parameterName")[15*(theselect.value-1)+8].childNodes[0].nodeValue);
+ var cl2=Number(xmlDoc.getElementsByTagName("parameterName")[15*(theselect.value-1)+5].childNodes[0].nodeValue);
+	 if(cl<20)
+	 {
+	  document.getElementById("tbtd32p").innerHTML='<font color="blue">'+cl+'~'+cl2+'</font>';
+	 }
+	 if(cl>=20&&cl<25)
+	 {
+	  document.getElementById("tbtd32p").innerHTML='<font color=EE7700>'+cl+'~'+cl2+'</font>';
+	 }
+	 if(cl>=25)
+	 {
+	 document.getElementById("tbtd32p").innerHTML='<font color="red">'+cl+'~'+cl2+'</font>';
+	 }
+}
+ 
+ </script>
+</body>
+</html>

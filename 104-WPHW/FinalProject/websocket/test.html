@@ -1,0 +1,18 @@
+<script>
+	
+	window.addEventListener("load",function(){
+		var ws = new WebSocket("ws://localhost:1111",'echo-protocol');
+		
+		document.getElementById("send").addEventListener("click",
+			function(){
+				var message = document.getElementById("message");
+				ws.send(message.value);
+				message.value="";
+		});
+	
+	
+		//document.getElementById("close").addEventListener("click", function(){  ws.close(); },true);
+	},true);
+	
+	
+</script>

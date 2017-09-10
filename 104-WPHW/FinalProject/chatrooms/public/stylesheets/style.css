@@ -1,0 +1,58 @@
+/* style.css */
+/* 顯示介面的css設定 */
+
+body{
+	padding: 50px;
+	font: 14px "Lucida grande", Helvetica, Arial, sans-serif;
+}
+
+a{
+	color:#00B7FF     /*#FF3333*/
+}
+
+#content{										/*應用程式為800圖素寬，並水平置中*/
+	width: 800px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#room{											/*展示當前聊天室名稱之區域的CSS規則*/
+	background-color: #ddd;
+	margin-bottom: 1em;
+}
+
+#messages{										/*訊息展示區域為690圖素*/
+	width: 690px;
+	height: 300px;
+	overflow: auto;								/*讓展示訊息的div在填滿內容時可以捲動*/
+	background-color: #eee;
+	margin-bottom: 1em;
+	margin-right: 10px;
+}
+
+
+#room-list {
+	float: right;
+	width: 100px;
+	height: 300px;
+	overflow: auto;
+background-color: #eee;
+}
+
+#room-list div {
+	border-bottom: 1px solid #eee;
+}
+
+#room-list div:hover {
+	background-color: #ddd;
+}
+
+#send-message {
+	width: 700px;
+	margin-buttom: 1em;
+	margin-right: 1em;
+}
+
+#help {
+	font: 10px "Lucida Grande", Helvetica, Arial, sans-serif;
+}

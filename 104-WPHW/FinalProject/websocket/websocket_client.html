@@ -1,0 +1,71 @@
+<!doctype html>
+
+<HTML lang ="en">
+	<HEAD>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<!-- 最新編譯和最佳化的 CSS -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+		<!-- 選擇性佈景主題 -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap-theme.min.css">
+		<!-- 最新編譯和最佳化的 JavaScript -->
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+	
+		<TITLE>Welcome to 丟水球</TITLE>
+		
+	</HEAD>
+<BODY>
+<script>
+	
+	window.addEventListener("load",function(){
+		//var input = document.getElementById("input");
+		//input.focus();
+		var ws = new WebSocket("ws://localhost:1111",'echo-protocol');
+			
+		document.getElementById("send").addEventListener("click",
+			function(){
+				var message = document.getElementById("message");
+				ws.send(message.value);
+				message.value="";
+		});
+		
+		document.getElementById("close").addEventListener("click", function(){  ws.close(); },true);
+	
+		window.addEventListener("open",function(event){
+			document.getElementById("result").innerHTML = "已連線"+"<br>";
+		},true);
+		
+		window.addEventListener("close",function(event){
+			document.getElementById("result").innerHTML += "已中斷連線"+"<br>";
+		},true);
+		
+		window.addEventListener("error",function(event){
+			document.getElementById("result").innerHTML += "發生錯誤了"+"<br>";
+		},true);
+	
+	
+	},true);
+	
+	
+	
+	
+	
+</script>
+<br><br><br><br><br>
+<h3><p align="center">WebSocket 訊息傳送服務</p></h2>
+
+<div  style="margin:0 auto;text-align:center;background-color:#FF8800;width:400px">
+<br>
+<div style="margin-down:10px">
+<input type="text" id="message" name="message" value="">
+</div>
+<br>
+<div>
+<input type="button" id="send" value="傳送">
+<input type="button" id="close" value="中斷">
+</div>
+<br>
+</div>
+</BODY>
+</HTML>

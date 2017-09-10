@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='Big5' ?>
+<customers>
+    <customer access='deny'>
+        <customerid >9001</customerid >
+        <customername >鄭中基</customername >
+        <tel>02-87878888</tel>
+        <email>michael@gmail.com</email>
+    </customer>
+    <customer access='pass'>
+        <customerid >9002</customerid >
+        <customername >朱協志</customername >
+        <tel>07-2255447</tel>
+        <email>john@yahoo.com.tw</email>
+    </customer>    
+</customers>

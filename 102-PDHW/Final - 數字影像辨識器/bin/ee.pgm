@@ -1,0 +1,11 @@
+P2
+# Shows the word "FEEP" (example from Netpbm main page on PGM)
+7 7
+15
+0  0  0  0  0  0
+0  7  7  7  7  0
+0  7  0  0  0  0
+0  7  7  7  0  0
+0  7  0  0  0  0
+0  7  7  7  7  0
+0  0  0  0  0  0
